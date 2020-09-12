@@ -50,12 +50,31 @@
 		7F557B4A24C9500100E6627A /* SignInHelper */ = {
 			isa = PBXGroup;
 			children = (
+				7FC3BA33250CD98300D9822B /* AppleSignIn */,
+				7FC3BA34250CD9D100D9822B /* GoogleSignIn */,
 				7F557B4B24C9500100E6627A /* SignInHelper.h */,
-				7F557B7424C9710E00E6627A /* AppleSignInManager.swift */,
 				7F557B4C24C9500100E6627A /* Info.plist */,
-				7F557B6424C9508B00E6627A /* AppleUser.swift */,
 			);
 			path = SignInHelper;
+			sourceTree = "<group>";
+		};
+		7FC3BA33250CD98300D9822B /* AppleSignIn */ = {
+			isa = PBXGroup;
+			children = (
+				7F557B7424C9710E00E6627A /* AppleSignInManager.swift */,
+				7F557B6424C9508B00E6627A /* AppleUser.swift */,
+			);
+			path = AppleSignIn;
+			sourceTree = "<group>";
+		};
+		7FC3BA34250CD9D100D9822B /* GoogleSignIn */ = {
+			isa = PBXGroup;
+			children = (
+				7FC3BA35250CD9FB00D9822B /* GoogleService.swift */,
+				7FC3BA37250CDA2500D9822B /* GoogleUser.swift */,
+				7FC3BA39250CDA4800D9822B /* GoogleSignInManager.swift */,
+			);
+			path = GoogleSignIn;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,7 +290,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = M7U9XAWBKN;
@@ -300,7 +319,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = M7U9XAWBKN;
