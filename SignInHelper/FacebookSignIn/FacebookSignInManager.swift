@@ -19,13 +19,13 @@ protocol FacebookSignInManagerDelegate {
 }
 
 
-class FacebookSignInManager {
+public class FacebookSignInManager: NSObject {
     
     private static var singleInstance : FBSDKLoginManager?
     
     var facebookUser: FacebookUser?
     
-    static var sharedInstance: FBSDKLoginManager {
+    static var shared: FBSDKLoginManager {
         get{
             if singleInstance == nil {
                 singleInstance = FBSDKLoginManager()

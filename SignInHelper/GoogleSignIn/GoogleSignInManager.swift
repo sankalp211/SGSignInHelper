@@ -16,7 +16,7 @@ protocol GoogleSignInManagerDelegate {
     func googleSignIn(didCompleteWithError error: Error)
 }
 
-class GoogleSignInManager : NSObject {
+public class GoogleSignInManager : NSObject {
     
     private static var singleInstance : GoogleSignInManager?
     

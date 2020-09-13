@@ -8,12 +8,12 @@
 
 import Foundation
 
-class GoogleService{
+public class GoogleService {
     
     var dict = [String: AnyObject]()
     static var singleInstance : GoogleService?
     
-    static var sharedInstance : GoogleService{
+    static var shared : GoogleService{
         get {
             if singleInstance == nil{
                 singleInstance = GoogleService()
